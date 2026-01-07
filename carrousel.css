@@ -1,0 +1,57 @@
+.carrousel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    /*overflow: hidden;*/
+   /*@include neo (1, 1em, 1em)*/
+       
+}
+
+.carrousel .grande {
+    width: 200%;
+    display: flex;  
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+   /*@include neo (1, 1em, 1em);*/
+    padding: 2em;
+    overflow: hidden;
+        
+
+    transition: all .5s ease;
+    transform: translateX(-50%)
+}
+
+.carrousel .img {
+    width: calc(100% / 2 -2);
+    min-height: 10vh;  
+    /*@include neo ( 1 , 1em , 1em );*/
+    padding: 2em;
+    object-fit: cover; 
+   
+
+}
+
+.carrousel .puntos {
+    width: 100%;  
+    margin: 1em 0 0;
+    padding: 4em;
+   display: flex;
+   flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.carrousel .punto { 
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;  
+    /*@include neo (1, 1em, 6em);*/
+
+}
+.carrousel .punto.activo{
+    background-color: orange;
+}
